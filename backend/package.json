@@ -1,0 +1,41 @@
+{
+  "name": "fueleu-backend",
+  "version": "1.0.0",
+  "description": "FuelEU Maritime Compliance Backend",
+  "main": "dist/infrastructure/server/index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/infrastructure/server/index.ts",
+    "build": "tsc",
+    "start": "node dist/infrastructure/server/index.js",
+    "test": "jest --runInBand",
+    "test:coverage": "jest --coverage --runInBand",
+    "db:migrate": "ts-node -r tsconfig-paths/register src/infrastructure/db/migrate.ts",
+    "db:seed": "ts-node -r tsconfig-paths/register src/infrastructure/db/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "pg": "^8.20.0",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.5.0",
+    "@types/pg": "^8.18.0",
+    "@types/supertest": "^7.2.0",
+    "eslint": "^10.0.3",
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

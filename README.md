@@ -4,6 +4,22 @@ A full-stack implementation of the FuelEU Maritime compliance module (Regulation
 
 ---
 
+## Screenshots
+
+### Routes — GHG intensity monitoring with compliance status
+![Routes tab](docs/screenshots/routes.png)
+
+### Compare — Baseline vs fleet bar chart
+![Compare tab](docs/screenshots/compare.png)
+
+### Banking — Article 20 surplus banking & application
+![Banking tab](docs/screenshots/banking.png)
+
+### Pooling — Article 21 compliance pool creation
+![Pooling tab](docs/screenshots/pooling.png)
+
+---
+
 ## Architecture
 
 Both frontend and backend follow **Hexagonal Architecture** (Ports & Adapters / Clean Architecture):

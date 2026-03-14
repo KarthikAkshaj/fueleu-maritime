@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
-import { BankSurplus } from '@core/application/BankSurplus';
-import { ApplyBanked } from '@core/application/ApplyBanked';
-import { IComplianceRepository } from '@core/ports/IComplianceRepository';
-import { IBankRepository } from '@core/ports/IBankRepository';
+import { BankSurplus } from '../../../core/application/BankSurplus';
+import { ApplyBanked } from '../../../core/application/ApplyBanked';
+import { IComplianceRepository } from '../../../core/ports/IComplianceRepository';
+import { IBankRepository } from '../../../core/ports/IBankRepository';
 
 export function createBankingRouter(
   complianceRepo: IComplianceRepository,

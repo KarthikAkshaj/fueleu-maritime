@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
-import { ComputeCB } from '@core/application/ComputeCB';
-import { IRouteRepository } from '@core/ports/IRouteRepository';
-import { IComplianceRepository } from '@core/ports/IComplianceRepository';
-import { IBankRepository } from '@core/ports/IBankRepository';
+import { ComputeCB } from '../../../core/application/ComputeCB';
+import { IRouteRepository } from '../../../core/ports/IRouteRepository';
+import { IComplianceRepository } from '../../../core/ports/IComplianceRepository';
+import { IBankRepository } from '../../../core/ports/IBankRepository';
 
 export function createComplianceRouter(
   routeRepo: IRouteRepository,

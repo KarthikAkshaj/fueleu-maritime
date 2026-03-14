@@ -1,6 +1,6 @@
 import { Pool as PgPool } from 'pg';
-import { BankEntry } from '@core/domain/Banking';
-import { IBankRepository } from '@core/ports/IBankRepository';
+import { BankEntry } from '../../../core/domain/Banking';
+import { IBankRepository } from '../../../core/ports/IBankRepository';
 
 function rowToEntry(row: Record<string, unknown>): BankEntry {
   return {

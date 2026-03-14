@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
-import { GetRoutes } from '@core/application/GetRoutes';
-import { SetBaseline } from '@core/application/SetBaseline';
-import { GetComparison } from '@core/application/GetComparison';
-import { IRouteRepository } from '@core/ports/IRouteRepository';
+import { GetRoutes } from '../../../core/application/GetRoutes';
+import { SetBaseline } from '../../../core/application/SetBaseline';
+import { GetComparison } from '../../../core/application/GetComparison';
+import { IRouteRepository } from '../../../core/ports/IRouteRepository';
 
 export function createRoutesRouter(routeRepo: IRouteRepository): Router {
   const router = Router();

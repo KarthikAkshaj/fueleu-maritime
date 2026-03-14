@@ -1,6 +1,6 @@
 import { Pool as PgPool } from 'pg';
-import { Pool, PoolMember } from '@core/domain/Pool';
-import { IPoolRepository } from '@core/ports/IPoolRepository';
+import { Pool, PoolMember } from '../../../core/domain/Pool';
+import { IPoolRepository } from '../../../core/ports/IPoolRepository';
 
 export class PoolRepository implements IPoolRepository {
   constructor(private readonly db: PgPool) {}

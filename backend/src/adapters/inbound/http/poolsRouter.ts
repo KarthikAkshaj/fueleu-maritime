@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
-import { CreatePool } from '@core/application/CreatePool';
-import { IComplianceRepository } from '@core/ports/IComplianceRepository';
-import { IPoolRepository } from '@core/ports/IPoolRepository';
+import { CreatePool } from '../../../core/application/CreatePool';
+import { IComplianceRepository } from '../../../core/ports/IComplianceRepository';
+import { IPoolRepository } from '../../../core/ports/IPoolRepository';
 
 export function createPoolsRouter(
   complianceRepo: IComplianceRepository,

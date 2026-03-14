@@ -1,6 +1,6 @@
 import { Pool as PgPool } from 'pg';
-import { ComplianceBalance } from '@core/domain/Compliance';
-import { IComplianceRepository } from '@core/ports/IComplianceRepository';
+import { ComplianceBalance } from '../../../core/domain/Compliance';
+import { IComplianceRepository } from '../../../core/ports/IComplianceRepository';
 
 function rowToCB(row: Record<string, unknown>): ComplianceBalance {
   return {

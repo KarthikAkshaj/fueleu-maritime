@@ -1,7 +1,7 @@
 import { Pool as PgPool } from 'pg';
-import { Route, RouteComparison, VesselType, FuelType } from '@core/domain/Route';
-import { TARGET_GHG_INTENSITY } from '@core/domain/Compliance';
-import { IRouteRepository } from '@core/ports/IRouteRepository';
+import { Route, RouteComparison, VesselType, FuelType } from '../../../core/domain/Route';
+import { TARGET_GHG_INTENSITY } from '../../../core/domain/Compliance';
+import { IRouteRepository } from '../../../core/ports/IRouteRepository';
 
 function rowToRoute(row: Record<string, unknown>): Route {
   return {
